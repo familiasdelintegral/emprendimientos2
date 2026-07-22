@@ -68,9 +68,21 @@
 <div id="modalOverlay" class="modal-overlay" hidden>
   <div class="modal" id="modal" role="dialog" aria-modal="true">
     <div class="modal__actions">
-      <button class="modal__action-btn" id="modalShare" aria-label="Compartir">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8 15.8 6.4M8.2 13.2l7.6 4.4"/></svg>
-      </button>
+      <div class="share-menu-wrap">
+        <button class="modal__action-btn" id="modalShare" aria-label="Compartir" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8 15.8 6.4M8.2 13.2l7.6 4.4"/></svg>
+        </button>
+        <div class="share-menu" id="shareMenu" hidden>
+          <button class="share-menu__item" id="shareCopyLink" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1.5 1.5"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1.5-1.5"/></svg>
+            Copiar link
+          </button>
+          <button class="share-menu__item" id="shareWhatsapp" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 0 0-7.75 13.54L3 21l4.6-1.22A9 9 0 1 0 12 3Z"/><path d="M8.5 8.7c-.15.9.2 1.9.9 2.9.9 1.3 2 2.2 3.3 2.9 1 .5 1.9.7 2.6.4.4-.2.9-.7 1-1.1"/></svg>
+            Compartir por WhatsApp
+          </button>
+        </div>
+      </div>
       <button class="modal__action-btn" id="modalClose" aria-label="Cerrar">✕</button>
     </div>
     <div id="modalContent"></div>

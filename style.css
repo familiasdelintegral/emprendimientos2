@@ -424,6 +424,46 @@ img{max-width:100%;display:block;}
   gap:8px;
   z-index:2;
 }
+.share-menu-wrap{
+  position:relative;
+}
+.share-menu{
+  position:absolute;
+  top:42px;
+  right:0;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  box-shadow:var(--shadow-hover);
+  padding:6px;
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  min-width:200px;
+  z-index:5;
+}
+.share-menu[hidden]{display:none;}
+.share-menu__item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:9px 12px;
+  border:none;
+  background:none;
+  border-radius:8px;
+  font-size:0.85rem;
+  font-weight:600;
+  color:var(--ink);
+  cursor:pointer;
+  text-align:left;
+  white-space:nowrap;
+  font-family:inherit;
+  transition:background .15s ease;
+}
+.share-menu__item svg{width:17px;height:17px;flex-shrink:0;color:var(--ink-soft);}
+.share-menu__item:hover{background:var(--bg);}
+.share-menu__item:hover svg{color:var(--blue);}
+#shareWhatsapp:hover svg{color:#1aa64c;}
 .modal__action-btn{
   width:34px;
   height:34px;

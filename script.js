@@ -1198,6 +1198,8 @@ function closeModal() {
   document.getElementById("modalOverlay").hidden = true;
   document.getElementById("modalContent").innerHTML = "";
   document.body.style.overflow = "";
+  document.getElementById("shareMenu").hidden = true;
+  document.getElementById("modalShare").setAttribute("aria-expanded", "false");
   history.replaceState(null, "", location.pathname + location.search);
 }
 
@@ -1226,17 +1228,12 @@ function showToast(msg) {
   showToast._timer = setTimeout(() => toast.classList.remove("show"), 2200);
 }
 
-function shareEntry(entry) {
-  const url = `${location.origin}${location.pathname}#e/${entrySlug(entry)}`;
-  const shareData = {
-    title: entry.negocio,
-    text: `${entry.negocio} · Directorio de Familias del Integral`,
-    url,
-  };
-  if (navigator.share) {
-    navigator.share(shareData).catch(() => {});
-    return;
-  }
+function entryShareUrl(entry) {
+  return `${location.origin}${location.pathname}#e/${entrySlug(entry)}`;
+}
+
+function copyEntryLink(entry) {
+  const url = entryShareUrl(entry);
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard
       .writeText(url)
@@ -1245,6 +1242,14 @@ function shareEntry(entry) {
     return;
   }
   showToast(url);
+}
+
+function shareEntryWhatsapp(entry) {
+  const url = entryShareUrl(entry);
+  const msg = encodeURIComponent(
+    `Mirá "${entry.negocio}" en el Directorio de Familias del Integral: ${url}`
+  );
+  window.open(`https://wa.me/?text=${msg}`, "_blank", "noopener");
 }
 
 // ---------- ZOOM DE FOTO (dentro del modal) ----------
@@ -1295,9 +1300,38 @@ document.getElementById("grid").addEventListener("click", (e) => {
 });
 
 document.getElementById("modalClose").addEventListener("click", closeModal);
-document.getElementById("modalShare").addEventListener("click", () => {
-  if (CURRENT_MODAL_ENTRY) shareEntry(CURRENT_MODAL_ENTRY);
+
+const shareMenuEl = document.getElementById("shareMenu");
+const modalShareBtn = document.getElementById("modalShare");
+
+function closeShareMenu() {
+  shareMenuEl.hidden = true;
+  modalShareBtn.setAttribute("aria-expanded", "false");
+}
+
+modalShareBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  const wasHidden = shareMenuEl.hidden;
+  shareMenuEl.hidden = !wasHidden;
+  modalShareBtn.setAttribute("aria-expanded", String(wasHidden));
 });
+
+document.getElementById("shareCopyLink").addEventListener("click", (e) => {
+  e.stopPropagation();
+  if (CURRENT_MODAL_ENTRY) copyEntryLink(CURRENT_MODAL_ENTRY);
+  closeShareMenu();
+});
+
+document.getElementById("shareWhatsapp").addEventListener("click", (e) => {
+  e.stopPropagation();
+  if (CURRENT_MODAL_ENTRY) shareEntryWhatsapp(CURRENT_MODAL_ENTRY);
+  closeShareMenu();
+});
+
+document.addEventListener("click", (e) => {
+  if (!shareMenuEl.hidden && !e.target.closest(".share-menu-wrap")) closeShareMenu();
+});
+
 document.getElementById("modalOverlay").addEventListener("click", (e) => {
   if (e.target.id === "modalOverlay") closeModal();
 });
@@ -1305,6 +1339,10 @@ document.getElementById("zoomClose").addEventListener("click", closeZoom);
 document.getElementById("zoomOverlay").addEventListener("click", closeZoom);
 document.addEventListener("keydown", (e) => {
   if (e.key !== "Escape") return;
+  if (!shareMenuEl.hidden) {
+    closeShareMenu();
+    return;
+  }
   if (!document.getElementById("zoomOverlay").hidden) {
     closeZoom();
     return;
