@@ -198,7 +198,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Lic. En trabajo social',
     nombre: 'Natalia Delgado',
     sala: 'Plateado, Naranja',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: '',
     whatsapp: '5491156659428',
     instagram: null,
@@ -209,7 +209,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Correctora de textos',
     nombre: 'Milagros Schroder',
     sala: 'Turquesa, Rojo',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Soy correctora de textos y asesora lingüística con perspectiva de género y derechos. Ayudo a mejorar textos para que sean claros, correctos, inclusivos y adecuados a cada público. Trabajo con materiales educativos, institucionales, profesionales y literarios, y también acompaño procesos de escritura y edición.',
     whatsapp: '5491151785225',
     instagram: null,
@@ -220,7 +220,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Agencia de marketing especializada en salud',
     nombre: 'Alejandra Paula Mercado',
     sala: 'Celeste',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Soy fundadora y directora de ConquerBA, una agencia de marketing, diseño y comunicación especializada en salud. Ayudamos a clínicas, instituciones, hospitales y empresas del sector a comunicar mejor lo que hacen: gestionamos sus estrategias de redes sociales, campañas de publicidad,  contenidos, sitios web, diseño y prensa. Trabajamos con clientes en Argentina y otros países.',
     whatsapp: '5491124951212',
     instagram: 'conquerba.marketing',
@@ -231,7 +231,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Lic. En Sociologia',
     nombre: 'Laura Bialoskurnik',
     sala: 'Sala 4 B, Dorado',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Soy Lic. En Sociologia de la UBA. Me especializo en el acompañamiento de trayectorias educativas y en el trabajo en organizaciones no gubernamentales. Atenta a nuevas oportunidades 🩵🧡',
     whatsapp: '5491150514331',
     instagram: 'laubialoskurnik',
@@ -242,7 +242,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Abogada Stephanie Paola Berman',
     nombre: 'Stephanie Paola Berman',
     sala: 'Sala 4 B, Magenta',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Abogada matriculada en CABA, hago divorcios de mutuo acuerdo, sucesiones, despidos',
     whatsapp: '5491162628758',
     instagram: null,
@@ -264,7 +264,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Psicóloga',
     nombre: 'Daniela verdecchia',
     sala: 'Celeste',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Soy psicóloga, acompaño familias, parejas y mujeres que se encuentran transitando el período perinatal (TRHA, embarazo, puerperio, crianza). Asimismo, atiendo adultos, adolescentes e infantes.',
     whatsapp: '5491130573623',
     instagram: 'lic.daniverdecchia',
@@ -286,7 +286,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Abogado',
     nombre: 'Ricardo Martinez',
     sala: 'Celeste, Amarillo',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Soy abogado. Me dedico principalmente a temas de familia (infancia y adolescencia, divorcios, alimentos, sucesiones y violencia familiar), amparos de salud y cuestiones civiles e inmobiliarias. Acompaño y asesoro a cada cliente de manera cercana, clara y personalizada',
     whatsapp: '5491166705968',
     instagram: null,
@@ -396,7 +396,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Contador',
     nombre: 'Fabio Alessandro',
     sala: 'Sala 5 A',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Estudio contable Pymes y personas fisicas',
     whatsapp: '54911663937',
     instagram: null,
@@ -572,7 +572,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Contador',
     nombre: 'Mariano Russo',
     sala: 'Azul',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: '',
     whatsapp: '5491151077528',
     instagram: null,
@@ -594,7 +594,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'INGENIERO EN SISTEMAS',
     nombre: 'Dario',
     sala: 'Verde, Bordó',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'INGENIERO EN SISTEMAS',
     whatsapp: '5491558086436',
     instagram: null,
@@ -616,7 +616,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Abogado',
     nombre: 'Pablo Claverie',
     sala: 'Bordó',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Especializado en sucesiones y derecho laboral',
     whatsapp: '5491164626865',
     instagram: null,
@@ -638,7 +638,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Consultor en finanzas, estrategia, marketing y RRHH',
     nombre: 'Gustavo Eidlin',
     sala: 'Bordó',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: '',
     whatsapp: '5491133448527',
     instagram: 'managementenred',
@@ -880,7 +880,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Eseyka',
     nombre: 'Nicolás Schvartzer',
     sala: '',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Consultora de Desarrollo Profesional especializada en el desarrollo de resultados y cultura a través del Liderazgo',
     whatsapp: '5491163684997',
     instagram: 'eseyka.peopleconsulting',
@@ -891,7 +891,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Innova Ingeniería',
     nombre: 'Eugenia Gamband',
     sala: 'Amarillo',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Desarrollamos proyecto de ingeniería. Proporcionamos soluciones a problema civiles estructurales complejos.',
     whatsapp: '5491123349347',
     instagram: 'innova.ingenieria_civil',
@@ -946,7 +946,7 @@ const CONSOLIDATED_ENTRIES = [
     negocio: 'Coach Ejecutiva y Organizacional - Consultoria - Cursos de Habilidades Blandas',
     nombre: 'Juliana Pirozzo',
     sala: 'Amarillo',
-    rubro: '💼 Profesionales (abogado, contador, etc.)',
+    rubro: '💼 Profesionales',
     descripcion: 'Acompaño a Personas y Organizaciones en el Camino de Aprendizaje y el Logro de Objetivos mediante el Coaching',
     whatsapp: '5491164916800',
     instagram: 'juliana.pirozzo.coach',
@@ -999,10 +999,12 @@ function computeRandomOrder(entries) {
 // Reemplaza una imagen rota por el emoji de respaldo de su rubro, sin
 // pisar otros elementos hermanos (como el chip de categoría superpuesto).
 function handleMediaError(img, emoji) {
+  const media = img.closest(".card__media, .modal__media");
   const span = document.createElement("span");
   span.className = "card__media-fallback";
   span.textContent = emoji;
   img.replaceWith(span);
+  if (media) media.classList.add(media.classList.contains("modal__media") ? "modal__media--empty" : "card__media--empty");
 }
 
 function getLinks(entry) {
@@ -1071,13 +1073,14 @@ function modalLinksHtml(entry) {
 function cardTemplate(entry, index) {
   const emoji = extractEmoji(entry.rubro);
   const rubroShort = escapeHtml(entry.rubro.replace(EMOJI_START, "").trim());
-  const media = entry.fotos[0]
+  const hasPhoto = !!entry.fotos[0];
+  const media = hasPhoto
     ? `<img src="${entry.fotos[0]}" alt="${escapeHtml(entry.negocio)}" loading="lazy" onerror="handleMediaError(this,'${emoji}')">`
     : `<span class="card__media-fallback">${emoji}</span>`;
 
   return `
     <article class="card" data-index="${index}">
-      <div class="card__media">
+      <div class="card__media${hasPhoto ? "" : " card__media--empty"}">
         ${media}
         <span class="card__category--overlay">${rubroShort}</span>
       </div>
@@ -1154,7 +1157,7 @@ function modalTemplate(entry) {
   const zoomAttrs = hasPhoto ? ` onclick="openZoom('${entry.fotos[0]}')" style="cursor:zoom-in"` : "";
 
   return `
-    <div class="modal__media"${zoomAttrs}>${media}</div>
+    <div class="modal__media${hasPhoto ? "" : " modal__media--empty"}"${zoomAttrs}>${media}</div>
     <div class="modal__body">
       <span class="card__category">${escapeHtml(entry.rubro)}</span>
       <h3 class="card__name">${escapeHtml(entry.negocio)}</h3>
