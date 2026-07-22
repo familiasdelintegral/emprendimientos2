@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Familias del Integral · Directorio de la comunidad</title>
+<meta name="description" content="Emprendimientos, oficios y profesiones de la comunidad del Colegio Integral Nuevos Ayres.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💙</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <img class="topbar__logo" src="header-nav-crop.png" alt="Familias del Integral">
+    <div class="search-wrap search-wrap--inline">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="search" type="text" placeholder="Buscar por nombre, emprendimiento o rubro…" autocomplete="off">
+    </div>
+    <a class="btn-primary btn-primary--sm" id="formLinkTop" href="#" target="_blank" rel="noopener">+ Sumar emprendimiento</a>
+  </div>
+  <div class="topbar__chips">
+    <div id="chips" class="chips" role="tablist" aria-label="Filtrar por rubro">
+      <!-- chips insertados por JS -->
+    </div>
+  </div>
+</header>
+
+<main class="page">
+
+  <div class="section-row">
+    <h2 id="sectionTitle" class="section-title">Todos los emprendimientos</h2>
+    <div class="section-row__right">
+      <p id="count" class="count"></p>
+      <div class="sort-select-wrap">
+        <svg class="sort-select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 4v16M7 4 3 8M7 4l4 4"/><path d="M17 20V4M17 20l4-4M17 20l-4-4"/></svg>
+        <select id="sortSelect" class="sort-select" aria-label="Ordenar resultados">
+          <option value="random">Aleatorio</option>
+          <option value="az">A → Z</option>
+          <option value="za">Z → A</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <section id="grid" class="grid" aria-live="polite">
+    <!-- tarjetas insertadas por JS -->
+  </section>
+
+  <div id="empty" class="empty" hidden>
+    <p>No encontramos resultados para tu búsqueda 🔍</p>
+    <button id="clearFilters" class="btn-ghost">Ver todos</button>
+  </div>
+
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Cargando el directorio…</p>
+  </div>
+
+  <section class="cta">
+    <h2>¿Tenés un emprendimiento, oficio o profesión?</h2>
+    <p>Sumate al directorio de la comunidad y compartilo con otras familias del cole.</p>
+    <a class="btn-primary" id="formLink" href="#" target="_blank" rel="noopener">Sumar mi emprendimiento</a>
+  </section>
+
+</main>
+
+<div id="modalOverlay" class="modal-overlay" hidden>
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <button class="modal__close" id="modalClose" aria-label="Cerrar">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div id="zoomOverlay" class="zoom-overlay" hidden>
+  <div id="zoomImage" class="zoom-overlay__image"></div>
+  <button class="zoom-overlay__close" id="zoomClose" aria-label="Cerrar">✕</button>
+</div>
+
+<footer class="footer">
+  <p>Comunidad de Familias · Colegio Integral Nuevos Ayres</p>
+  <p>
+    <a href="mailto:familias.integral@integralnuevosayres.esc.edu.ar">familias.integral@integralnuevosayres.esc.edu.ar</a>
+    ·
+    <a href="https://www.instagram.com/familias_del_integral/" target="_blank" rel="noopener">@familias_del_integral</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
