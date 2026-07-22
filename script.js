@@ -591,11 +591,11 @@ const CONSOLIDATED_ENTRIES = [
     fotos: [],
   },
   {
-    negocio: 'INGENIERO EN SISTEMAS',
+    negocio: 'Ingeniero en Sistemas',
     nombre: 'Dario',
     sala: 'Verde, Bordó',
     rubro: '💼 Profesionales',
-    descripcion: 'INGENIERO EN SISTEMAS',
+    descripcion: 'Ingeniero en Sistemas',
     whatsapp: '5491558086436',
     instagram: null,
     webs: [],
