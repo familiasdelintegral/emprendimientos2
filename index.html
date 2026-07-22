@@ -67,7 +67,12 @@
 
 <div id="modalOverlay" class="modal-overlay" hidden>
   <div class="modal" id="modal" role="dialog" aria-modal="true">
-    <button class="modal__close" id="modalClose" aria-label="Cerrar">✕</button>
+    <div class="modal__actions">
+      <button class="modal__action-btn" id="modalShare" aria-label="Compartir">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8 15.8 6.4M8.2 13.2l7.6 4.4"/></svg>
+      </button>
+      <button class="modal__action-btn" id="modalClose" aria-label="Cerrar">✕</button>
+    </div>
     <div id="modalContent"></div>
   </div>
 </div>

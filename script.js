@@ -591,11 +591,11 @@ const CONSOLIDATED_ENTRIES = [
     fotos: [],
   },
   {
-    negocio: 'Ingeniero en Sistemas',
+    negocio: 'INGENIERO EN SISTEMAS',
     nombre: 'Dario',
     sala: 'Verde, Bordó',
     rubro: '💼 Profesionales',
-    descripcion: 'Ingeniero en Sistemas',
+    descripcion: 'INGENIERO EN SISTEMAS',
     whatsapp: '5491558086436',
     instagram: null,
     webs: [],
@@ -1168,16 +1168,83 @@ function modalTemplate(entry) {
     </div>`;
 }
 
+// Slug estable por entrada (negocio + nombre), usado para armar el link
+// compartible de cada tarjeta. No depende del orden ni de los filtros.
+function slugify(text) {
+  return norm(text)
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function entrySlug(entry) {
+  return slugify(`${entry.negocio}-${entry.nombre}`) || slugify(entry.negocio) || "emprendimiento";
+}
+
+let CURRENT_MODAL_ENTRY = null;
+
 function openModal(entry) {
+  CURRENT_MODAL_ENTRY = entry;
   document.getElementById("modalContent").innerHTML = modalTemplate(entry);
   document.getElementById("modalOverlay").hidden = false;
   document.body.style.overflow = "hidden";
+  history.replaceState(null, "", `${location.pathname}${location.search}#e/${entrySlug(entry)}`);
 }
 
 function closeModal() {
+  CURRENT_MODAL_ENTRY = null;
   document.getElementById("modalOverlay").hidden = true;
   document.getElementById("modalContent").innerHTML = "";
   document.body.style.overflow = "";
+  history.replaceState(null, "", location.pathname + location.search);
+}
+
+// Abre el modal correspondiente si la URL trae un link compartido (#e/slug).
+function openFromHash() {
+  const m = location.hash.match(/^#e\/(.+)$/);
+  if (!m) return;
+  const slug = decodeURIComponent(m[1]);
+  const entry = ALL_ENTRIES.find((e) => entrySlug(e) === slug);
+  if (entry) openModal(entry);
+}
+
+// ---------- COMPARTIR ----------
+
+function showToast(msg) {
+  let toast = document.getElementById("toast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.id = "toast";
+    toast.className = "toast";
+    document.body.appendChild(toast);
+  }
+  toast.textContent = msg;
+  toast.classList.add("show");
+  clearTimeout(showToast._timer);
+  showToast._timer = setTimeout(() => toast.classList.remove("show"), 2200);
+}
+
+function shareEntry(entry) {
+  const url = `${location.origin}${location.pathname}#e/${entrySlug(entry)}`;
+  const shareData = {
+    title: entry.negocio,
+    text: `${entry.negocio} · Directorio de Familias del Integral`,
+    url,
+  };
+  if (navigator.share) {
+    navigator.share(shareData).catch(() => {});
+    return;
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard
+      .writeText(url)
+      .then(() => showToast("¡Link copiado! 🔗"))
+      .catch(() => showToast(url));
+    return;
+  }
+  showToast(url);
 }
 
 // ---------- ZOOM DE FOTO (dentro del modal) ----------
@@ -1228,6 +1295,9 @@ document.getElementById("grid").addEventListener("click", (e) => {
 });
 
 document.getElementById("modalClose").addEventListener("click", closeModal);
+document.getElementById("modalShare").addEventListener("click", () => {
+  if (CURRENT_MODAL_ENTRY) shareEntry(CURRENT_MODAL_ENTRY);
+});
 document.getElementById("modalOverlay").addEventListener("click", (e) => {
   if (e.target.id === "modalOverlay") closeModal();
 });
@@ -1253,3 +1323,4 @@ computeRandomOrder(ALL_ENTRIES);
 document.getElementById("loading").hidden = true;
 renderChips();
 render();
+openFromHash();
