@@ -716,11 +716,7 @@ const CONSOLIDATED_ENTRIES = [
     nombre: 'Ezequiel Smiriglia',
     sala: 'Azul, Rosa',
     rubro: '🍽️ Gastronomía y viajes',
-    descripcion: '🥑 Avocados de especialidad
-☕ Café & brunch all day
-🌿 Todos los días de 8 a 20 hs
-📍 Palermo
-Soler 5999, Buenos Aires, Argentina 1425',
+    descripcion: 'Empresario gastronómico',
     whatsapp: '5491165538174',
     instagram: 'theavocadocompany.arg',
     webs: [],
