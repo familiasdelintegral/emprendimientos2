@@ -1041,6 +1041,28 @@ const CONSOLIDATED_ENTRIES = [
     webs: ['https://www.alarmasmarshall.ar'],
     fotos: ['images/alarmas-marshall-alejandro-luna.jpg'],
   },
+  {
+    negocio: 'El Sol de Galicia',
+    nombre: 'Nicolás Sobrino',
+    sala: 'Sala 5 A',
+    rubro: '🍽️ Gastronomía y viajes',
+    descripcion: 'Comercialización de frutos de sartén frescos y congelados. Churros, donas, berlinesas, tortas fritas y pastelitos.',
+    whatsapp: '5491159889017',
+    instagram: 'elsoldegalicia',
+    webs: ['https://www.elsoldegalicia.com'],
+    fotos: ['images/el-sol-de-galicia-nicolas-sobrino.png'],
+  },
+  {
+    negocio: 'Médica Pediatra',
+    nombre: 'María Belén Gazaba',
+    sala: 'Sala 5 A',
+    rubro: '🩺 Salud y bienestar',
+    descripcion: 'Soy médica pediatra de la UBA. Atiendo niñas, niños y adolescentes, controles de salud y demanda espontánea. Consultorio en Villa del Parque.',
+    whatsapp: '5491156012626',
+    instagram: 'consultoriodelparque',
+    webs: [],
+    fotos: ['images/consultorio-del-parque-belen-gazaba-1.jpg', 'images/consultorio-del-parque-belen-gazaba-2.jpg'],
+  },
 ];
 
 // ---------- RENDER ----------
@@ -1214,16 +1236,51 @@ function render() {
 
 // ---------- MODAL (tarjeta ampliada) ----------
 
-function modalTemplate(entry) {
+function modalMediaHtml(entry, index) {
   const emoji = extractEmoji(entry.rubro);
-  const hasPhoto = !!entry.fotos[0];
+  const fotos = entry.fotos || [];
+  const hasPhoto = !!fotos[index];
+  const src = fotos[index];
   const media = hasPhoto
-    ? `<img src="${entry.fotos[0]}" alt="${escapeHtml(entry.negocio)}" onerror="handleMediaError(this,'${emoji}')">`
+    ? `<img src="${src}" alt="${escapeHtml(entry.negocio)}" onerror="handleMediaError(this,'${emoji}')">`
     : `<span class="card__media-fallback">${emoji}</span>`;
-  const zoomAttrs = hasPhoto ? ` onclick="openZoom('${entry.fotos[0]}')" style="cursor:zoom-in"` : "";
+  const zoomAttrs = hasPhoto ? ` onclick="openZoom('${src}')" style="cursor:zoom-in"` : "";
+  const carousel =
+    fotos.length > 1
+      ? `
+        <button type="button" class="modal__media-nav modal__media-nav--prev" onclick="event.stopPropagation(); modalPhotoNav(-1)" aria-label="Foto anterior">‹</button>
+        <button type="button" class="modal__media-nav modal__media-nav--next" onclick="event.stopPropagation(); modalPhotoNav(1)" aria-label="Foto siguiente">›</button>
+        <div class="modal__media-dots">
+          ${fotos
+            .map(
+              (_, i) =>
+                `<span class="modal__media-dot${i === index ? " active" : ""}" onclick="event.stopPropagation(); modalPhotoGoto(${i})"></span>`
+            )
+            .join("")}
+        </div>`
+      : "";
 
+  return `<div class="modal__media${hasPhoto ? "" : " modal__media--empty"}" id="modalMedia"${zoomAttrs}>${media}${carousel}</div>`;
+}
+
+function modalPhotoNav(delta) {
+  if (!CURRENT_MODAL_ENTRY) return;
+  const len = (CURRENT_MODAL_ENTRY.fotos || []).length;
+  if (len < 2) return;
+  CURRENT_MODAL_PHOTO_INDEX = (CURRENT_MODAL_PHOTO_INDEX + delta + len) % len;
+  document.getElementById("modalMedia").outerHTML = modalMediaHtml(CURRENT_MODAL_ENTRY, CURRENT_MODAL_PHOTO_INDEX);
+}
+
+function modalPhotoGoto(i) {
+  if (!CURRENT_MODAL_ENTRY) return;
+  CURRENT_MODAL_PHOTO_INDEX = i;
+  document.getElementById("modalMedia").outerHTML = modalMediaHtml(CURRENT_MODAL_ENTRY, i);
+}
+
+function modalTemplate(entry) {
+  CURRENT_MODAL_PHOTO_INDEX = 0;
   return `
-    <div class="modal__media${hasPhoto ? "" : " modal__media--empty"}"${zoomAttrs}>${media}</div>
+    ${modalMediaHtml(entry, 0)}
     <div class="modal__body">
       <span class="card__category">${escapeHtml(entry.rubro)}</span>
       <h3 class="card__name">${escapeHtml(entry.negocio)}</h3>
@@ -1250,6 +1307,7 @@ function entrySlug(entry) {
 }
 
 let CURRENT_MODAL_ENTRY = null;
+let CURRENT_MODAL_PHOTO_INDEX = 0;
 
 function openModal(entry) {
   CURRENT_MODAL_ENTRY = entry;
