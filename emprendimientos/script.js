@@ -1161,16 +1161,20 @@ function modalLinksHtml(entry) {
 function cardTemplate(entry, index) {
   const emoji = extractEmoji(entry.rubro);
   const rubroShort = escapeHtml(entry.rubro.replace(EMOJI_START, "").trim());
-  const hasPhoto = !!entry.fotos[0];
+  const fotos = entry.fotos || [];
+  const hasPhoto = !!fotos[0];
   const media = hasPhoto
-    ? `<img src="${entry.fotos[0]}" alt="${escapeHtml(entry.negocio)}" loading="lazy" onerror="handleMediaError(this,'${emoji}')">`
+    ? `<img src="${fotos[0]}" alt="${escapeHtml(entry.negocio)}" loading="lazy" onerror="handleMediaError(this,'${emoji}')">`
     : `<span class="card__media-fallback">${emoji}</span>`;
+  const multiPhotoBadge =
+    fotos.length > 1 ? `<span class="card__media-count">🖼️ +${fotos.length - 1}</span>` : "";
 
   return `
     <article class="card" data-index="${index}">
       <div class="card__media${hasPhoto ? "" : " card__media--empty"}">
         ${media}
         <span class="card__category--overlay">${rubroShort}</span>
+        ${multiPhotoBadge}
       </div>
       <div class="card__body">
         <h3 class="card__name">${escapeHtml(entry.negocio)}</h3>
