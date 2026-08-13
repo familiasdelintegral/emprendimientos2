@@ -229,18 +229,20 @@ img{max-width:100%;display:block;}
   left:50%;
   transform:translateX(-50%);
   display:flex;
-  gap:4px;
+  align-items:center;
+  gap:6px;
+  padding:5px 9px;
+  border-radius:999px;
+  background:rgba(20,25,45,0.55);
 }
 .card__media-dots span{
-  width:5px;
-  height:5px;
+  width:7px;
+  height:7px;
   border-radius:50%;
-  background:#fff;
-  opacity:0.55;
-  box-shadow:0 0 3px rgba(0,0,0,0.45);
+  background:rgba(255,255,255,0.5);
 }
 .card__media-dots span:first-child{
-  opacity:1;
+  background:#fff;
 }
 .card__body{
   padding:10px 12px 12px;
