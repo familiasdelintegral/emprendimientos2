@@ -1166,15 +1166,17 @@ function cardTemplate(entry, index) {
   const media = hasPhoto
     ? `<img src="${fotos[0]}" alt="${escapeHtml(entry.negocio)}" loading="lazy" onerror="handleMediaError(this,'${emoji}')">`
     : `<span class="card__media-fallback">${emoji}</span>`;
-  const multiPhotoBadge =
-    fotos.length > 1 ? `<span class="card__media-count">🖼️ +${fotos.length - 1}</span>` : "";
+  const multiPhotoDots =
+    fotos.length > 1
+      ? `<div class="card__media-dots">${fotos.map(() => `<span></span>`).join("")}</div>`
+      : "";
 
   return `
     <article class="card" data-index="${index}">
       <div class="card__media${hasPhoto ? "" : " card__media--empty"}">
         ${media}
         <span class="card__category--overlay">${rubroShort}</span>
-        ${multiPhotoBadge}
+        ${multiPhotoDots}
       </div>
       <div class="card__body">
         <h3 class="card__name">${escapeHtml(entry.negocio)}</h3>

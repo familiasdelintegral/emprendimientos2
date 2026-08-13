@@ -223,19 +223,24 @@ img{max-width:100%;display:block;}
   padding:3px 8px;
   border-radius:999px;
 }
-.card__media-count{
+.card__media-dots{
   position:absolute;
   bottom:8px;
-  right:8px;
-  font-size:0.68rem;
-  font-weight:700;
-  color:#fff;
-  background:rgba(20,25,45,0.68);
-  padding:3px 8px;
-  border-radius:999px;
+  left:50%;
+  transform:translateX(-50%);
   display:flex;
-  align-items:center;
-  gap:3px;
+  gap:4px;
+}
+.card__media-dots span{
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:#fff;
+  opacity:0.55;
+  box-shadow:0 0 3px rgba(0,0,0,0.45);
+}
+.card__media-dots span:first-child{
+  opacity:1;
 }
 .card__body{
   padding:10px 12px 12px;
