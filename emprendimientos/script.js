@@ -262,7 +262,7 @@ const CONSOLIDATED_ENTRIES = [
   },
   {
     negocio: 'Psicóloga',
-    nombre: 'Daniela verdecchia',
+    nombre: 'Daniela Verdecchia',
     sala: 'Celeste',
     rubro: '💼 Profesionales',
     descripcion: 'Soy psicóloga, acompaño familias, parejas y mujeres que se encuentran transitando el período perinatal (TRHA, embarazo, puerperio, crianza). Asimismo, atiendo adultos, adolescentes e infantes.',
@@ -295,7 +295,7 @@ const CONSOLIDATED_ENTRIES = [
   },
   {
     negocio: 'DigitoA - imprenta',
-    nombre: 'LAURA LUCIANA ANSELMI',
+    nombre: 'Laura Luciana Anselmi',
     sala: 'Magenta',
     rubro: '🎨 Arte y creatividad',
     descripcion: 'Tengo una imprenta, hacemos todo tipo de servicio gráficos, tarjetas, carpetas, flyers, etiquetas, vinilos, carteles y muchas cosas mas, todo dentro del sector gráfico.',
@@ -416,7 +416,7 @@ const CONSOLIDATED_ENTRIES = [
   },
   {
     negocio: 'Psicóloga',
-    nombre: 'Luciana slipakoff',
+    nombre: 'Luciana Slipakoff',
     sala: 'Sala 4 A, Verde',
     rubro: '🩺 Salud y bienestar',
     descripcion: 'Soy psicóloga. Atiendo pacientes jóvenes, adultxs y personas mayores tanto en mi consultorio particular en Villa del Parque como online. También coordino propuestas grupales de interés para personas +60',
@@ -445,7 +445,7 @@ const CONSOLIDATED_ENTRIES = [
     whatsapp: '5491156355810',
     instagram: null,
     webs: [],
-    fotos: [],
+    fotos: ['images/profe-de-ingles-sol-valeri.jpg'],
   },
   {
     negocio: 'Bienestar corporativo',
@@ -515,7 +515,7 @@ const CONSOLIDATED_ENTRIES = [
   },
   {
     negocio: 'Mano Verde, Slow Beauty',
-    nombre: 'Samanta perez',
+    nombre: 'Samanta Perez',
     sala: 'Verde, Amarillo',
     rubro: '🩺 Salud y bienestar',
     descripcion: 'Curaduria de cosmética orgánica y sustentable y limpia.\n\nCuraduría de Productos Cosméticos y de cuidados diarios conscientes. Trabajo 3 líneas: Cosmética Natural y Orgánica, Cosmética Frecuencial y Cosmética Dermatológica con fórmula Clean. Todos los productos son ecológicos, sin género y Cryelty free.',
