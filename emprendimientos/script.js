@@ -566,7 +566,7 @@ const CONSOLIDATED_ENTRIES = [
     whatsapp: '5491561030645',
     instagram: 'melinasaredo',
     webs: ['https://melinasaredo.wixsite.com/artes'],
-    fotos: ['images/artista-visual-melina-saredo.jpg'],
+    fotos: ['images/artista-visual-melina-saredo.jpg', 'images/artista-visual-melina-saredo-2.jpg'],
   },
   {
     negocio: 'Contador',
