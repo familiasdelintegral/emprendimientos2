@@ -262,7 +262,7 @@ const CONSOLIDATED_ENTRIES = [
   },
   {
     negocio: 'Psicóloga',
-    nombre: 'Daniela verdecchia',
+    nombre: 'Daniela Verdecchia',
     sala: 'Celeste',
     rubro: '💼 Profesionales',
     descripcion: 'Soy psicóloga, acompaño familias, parejas y mujeres que se encuentran transitando el período perinatal (TRHA, embarazo, puerperio, crianza). Asimismo, atiendo adultos, adolescentes e infantes.',
@@ -295,7 +295,7 @@ const CONSOLIDATED_ENTRIES = [
   },
   {
     negocio: 'DigitoA - imprenta',
-    nombre: 'LAURA LUCIANA ANSELMI',
+    nombre: 'Laura Luciana Anselmi',
     sala: 'Magenta',
     rubro: '🎨 Arte y creatividad',
     descripcion: 'Tengo una imprenta, hacemos todo tipo de servicio gráficos, tarjetas, carpetas, flyers, etiquetas, vinilos, carteles y muchas cosas mas, todo dentro del sector gráfico.',
@@ -416,7 +416,7 @@ const CONSOLIDATED_ENTRIES = [
   },
   {
     negocio: 'Psicóloga',
-    nombre: 'Luciana slipakoff',
+    nombre: 'Luciana Slipakoff',
     sala: 'Sala 4 A, Verde',
     rubro: '🩺 Salud y bienestar',
     descripcion: 'Soy psicóloga. Atiendo pacientes jóvenes, adultxs y personas mayores tanto en mi consultorio particular en Villa del Parque como online. También coordino propuestas grupales de interés para personas +60',
@@ -445,7 +445,7 @@ const CONSOLIDATED_ENTRIES = [
     whatsapp: '5491156355810',
     instagram: null,
     webs: [],
-    fotos: [],
+    fotos: ['images/profe-de-ingles-sol-valeri.jpg'],
   },
   {
     negocio: 'Bienestar corporativo',
@@ -515,7 +515,7 @@ const CONSOLIDATED_ENTRIES = [
   },
   {
     negocio: 'Mano Verde, Slow Beauty',
-    nombre: 'Samanta perez',
+    nombre: 'Samanta Perez',
     sala: 'Verde, Amarillo',
     rubro: '🩺 Salud y bienestar',
     descripcion: 'Curaduria de cosmética orgánica y sustentable y limpia.\n\nCuraduría de Productos Cosméticos y de cuidados diarios conscientes. Trabajo 3 líneas: Cosmética Natural y Orgánica, Cosmética Frecuencial y Cosmética Dermatológica con fórmula Clean. Todos los productos son ecológicos, sin género y Cryelty free.',
@@ -566,7 +566,7 @@ const CONSOLIDATED_ENTRIES = [
     whatsapp: '5491561030645',
     instagram: 'melinasaredo',
     webs: ['https://melinasaredo.wixsite.com/artes'],
-    fotos: ['images/artista-visual-melina-saredo.jpg'],
+    fotos: ['images/artista-visual-melina-saredo.jpg', 'images/artista-visual-melina-saredo-2.jpg'],
   },
   {
     negocio: 'Contador',
@@ -652,7 +652,7 @@ const CONSOLIDATED_ENTRIES = [
     rubro: '👗 Moda e indumentaria',
     descripcion: 'Emprendimiento de accesorios textiles ( bolsos, riñoneras, neceser, etc etc)',
     whatsapp: '5491158652682',
-    instagram: 'unpezsoluble.ok',
+    instagram: 'unpez.soluble',
     webs: ['https://www.unpezsoluble.com.ar'],
     fotos: ['images/un-pez-soluble-nadia.jpg'],
   },
@@ -1017,7 +1017,7 @@ const CONSOLIDATED_ENTRIES = [
     whatsapp: '5491168651125',
     instagram: null,
     webs: [],
-    fotos: [],
+    fotos: ['images/optica-velez-sarsfield-natalia-farynyk.png'],
   },
   {
     negocio: 'Asesora integral financiera y en planificación familiar',
@@ -1062,6 +1062,149 @@ const CONSOLIDATED_ENTRIES = [
     instagram: 'consultoriodelparque',
     webs: [],
     fotos: ['images/consultorio-del-parque-belen-gazaba-1.jpg', 'images/consultorio-del-parque-belen-gazaba-2.jpg'],
+  },
+  {
+    negocio: 'CEMESI - Centro de medicina y salud integral',
+    nombre: 'Mauro Sebastián Russo',
+    sala: 'Sala 1',
+    rubro: '🩺 Salud y bienestar',
+    descripcion: 'Somos un equipo médico que trabaja de forma integral la salud física y mental para lograr el mayor nivel de bienestar posible. Contamos con planes de seguimiento personalizado. Tenemos alianzas comerciales con gimnasios y artículos de bienestar para mejorar la calidad de vida de nuestros pacientes.',
+    whatsapp: '5491133262892',
+    instagram: 'centro_medico_salud_integral',
+    webs: ['https://www.cemesi.com'],
+    fotos: [],
+  },
+  {
+    negocio: 'Estudio Contable',
+    nombre: 'Viviana',
+    sala: 'Sala 4 A, Sala 4 B',
+    rubro: '💼 Profesionales',
+    descripcion: 'Asesoramiento contable-impositivo. Atención personalizada. Especialización en Declaraciones Juradas de Bienes Personales y Ganancias. Atendemos a monotributistas.',
+    whatsapp: '5491169529989',
+    instagram: null,
+    webs: [],
+    fotos: ['images/estudio-contable-viviana.jpg'],
+  },
+  {
+    negocio: 'Paula Ledesma Knitwear',
+    nombre: 'Barbara Ledesma',
+    sala: 'Sala 3 A, Plateado',
+    rubro: '👗 Moda e indumentaria',
+    descripcion: 'Hacemos indumentaria tejida femenina con algunos modelos unisex. Tejidos cómodos, atemporales, a mano o a máquina manual. Showroom en Villa Crespo y atención personalizada por WhatsApp.',
+    whatsapp: '5491139219513',
+    instagram: 'paulaledesmaknitwear',
+    webs: ['https://www.paulaledesma.com.ar'],
+    fotos: ['images/paula-ledesma-knitwear-barbara-ledesma-1.webp', 'images/paula-ledesma-knitwear-barbara-ledesma-2.jpg'],
+  },
+  {
+    negocio: 'Ambar Hilados',
+    nombre: 'Barbara Ledesma',
+    sala: 'Sala 3 A, Plateado',
+    rubro: '🎨 Arte y creatividad',
+    descripcion: 'Somos una empresa familiar dedicada hace 40 años a la venta de hilados manuales para el tejido y las manualidades. Local a la calle en Villa Crespo.',
+    whatsapp: '5491172196669',
+    instagram: 'ambarhilados',
+    webs: ['https://www.ambarhilados.com.ar'],
+    fotos: ['images/ambar-hilados-barbara-ledesma-1.webp', 'images/ambar-hilados-barbara-ledesma-2.jpg'],
+  },
+  {
+    negocio: 'FAULA Pastelería',
+    nombre: 'Julia Simino',
+    sala: 'Sala 3 A, Dorado',
+    rubro: '🍽️ Gastronomía y viajes',
+    descripcion: 'Somos Julia y Rocío, creamos FAULA; una pastelería artesanal que logra ser simple, añeja y familiar, pero al mismo tiempo sofisticada y novedosa.',
+    whatsapp: '5491138663760',
+    instagram: 'faula_pasteleria',
+    webs: [],
+    fotos: ['images/faula-pasteleria-julia-simino.png'],
+  },
+  {
+    negocio: 'Contadora Pública',
+    nombre: 'Verónica Leal',
+    sala: 'Sala 4 B',
+    rubro: '💼 Profesionales',
+    descripcion: 'Soy contadora especializada en liquidación de sueldos y jornales, declaraciones juradas de ganancias y bienes personales y declaraciones mensuales solicitadas por ARCA.',
+    whatsapp: '5491166147870',
+    instagram: null,
+    webs: [],
+    fotos: [],
+  },
+  {
+    negocio: 'Reflexología Holística',
+    nombre: 'Vanesa Helguera',
+    sala: 'Sala 2 A',
+    rubro: '🩺 Salud y bienestar',
+    descripcion: 'Fusión Reiki + Armonización Energética. En cada sesión combino Reiki y armonización, creando una experiencia profunda de relajación y bienestar. Reflexología en pies. Reiki. Armonización energética. Relajación y conexión cuerpo-mente. Ideal para quienes necesitan regalarse un momento de calma, soltar tensiones y descansar. Sesiones a domicilio. Para todas las edades.',
+    whatsapp: '5491155061808',
+    instagram: null,
+    webs: [],
+    fotos: ['images/reflexologia-holistica-vanesa-helguera-1.png', 'images/reflexologia-holistica-vanesa-helguera-2.png'],
+  },
+  {
+    negocio: 'Chofer',
+    nombre: 'Agustín Gordillo',
+    sala: 'Turquesa',
+    rubro: '🍽️ Gastronomía y viajes',
+    descripcion: 'Soy chófer en producciones de cine, también con pasajeros particulares.',
+    whatsapp: '5491160346176',
+    instagram: null,
+    webs: [],
+    fotos: ['images/agustin-gordillo.png'],
+  },
+  {
+    negocio: 'Pintor',
+    nombre: 'Agustín Gordillo',
+    sala: 'Turquesa',
+    rubro: '🔨 Servicios del hogar',
+    descripcion: 'Pinto casas.',
+    whatsapp: '5491160346176',
+    instagram: null,
+    webs: [],
+    fotos: [],
+  },
+  {
+    negocio: 'Tatuador',
+    nombre: 'Agustín Gordillo',
+    sala: 'Turquesa',
+    rubro: '🎨 Arte y creatividad',
+    descripcion: 'Tatuo.',
+    whatsapp: '5491160346176',
+    instagram: null,
+    webs: [],
+    fotos: [],
+  },
+  {
+    negocio: 'Peluquero',
+    nombre: 'Agustín Gordillo',
+    sala: 'Turquesa',
+    rubro: '🔨 Servicios del hogar',
+    descripcion: 'Peluquero de niños y adultos.',
+    whatsapp: '5491160346176',
+    instagram: null,
+    webs: [],
+    fotos: [],
+  },
+  {
+    negocio: 'Artista',
+    nombre: 'Agustín Gordillo',
+    sala: 'Turquesa',
+    rubro: '🎨 Arte y creatividad',
+    descripcion: 'Realizo tallado de vidrio y espejos. Realizo murales.',
+    whatsapp: '5491160346176',
+    instagram: null,
+    webs: [],
+    fotos: [],
+  },
+  {
+    negocio: 'Wincafe Vending',
+    nombre: 'Esteban Jaeggi',
+    sala: 'Sala Naranja',
+    rubro: '🍽️ Gastronomía y viajes',
+    descripcion: 'Somos una empresa de expendedoras de café y snacks para comercios y oficinas.',
+    whatsapp: '5491160482832',
+    instagram: 'wincafe.ar',
+    webs: [],
+    fotos: ['images/wincafe-vending-esteban-jaeggi-1.png', 'images/wincafe-vending-esteban-jaeggi-2.png'],
   },
 ];
 
@@ -1166,15 +1309,17 @@ function cardTemplate(entry, index) {
   const media = hasPhoto
     ? `<img src="${fotos[0]}" alt="${escapeHtml(entry.negocio)}" loading="lazy" onerror="handleMediaError(this,'${emoji}')">`
     : `<span class="card__media-fallback">${emoji}</span>`;
-  const multiPhotoBadge =
-    fotos.length > 1 ? `<span class="card__media-count">🖼️ +${fotos.length - 1}</span>` : "";
+  const multiPhotoDots =
+    fotos.length > 1
+      ? `<div class="card__media-dots">${fotos.map(() => `<span></span>`).join("")}</div>`
+      : "";
 
   return `
     <article class="card" data-index="${index}">
       <div class="card__media${hasPhoto ? "" : " card__media--empty"}">
         ${media}
         <span class="card__category--overlay">${rubroShort}</span>
-        ${multiPhotoBadge}
+        ${multiPhotoDots}
       </div>
       <div class="card__body">
         <h3 class="card__name">${escapeHtml(entry.negocio)}</h3>
