@@ -1169,9 +1169,9 @@ const CONSOLIDATED_ENTRIES = [
     rubro: '🎨 Arte y creatividad',
     descripcion: 'Tatuo.',
     whatsapp: '5491160346176',
-    instagram: null,
+    instagram: 'holy.shittattoo',
     webs: [],
-    fotos: [],
+    fotos: ['images/tatuador-agustin-gordillo-1.png', 'images/tatuador-agustin-gordillo-2.png', 'images/tatuador-agustin-gordillo-3.png', 'images/tatuador-agustin-gordillo-4.png'],
   },
   {
     negocio: 'Peluquero',
