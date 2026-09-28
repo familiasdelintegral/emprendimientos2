@@ -1193,7 +1193,7 @@ const CONSOLIDATED_ENTRIES = [
     whatsapp: '5491160346176',
     instagram: null,
     webs: [],
-    fotos: [],
+    fotos: ['images/artista-agustin-gordillo-1.jpeg', 'images/artista-agustin-gordillo-2.jpeg', 'images/artista-agustin-gordillo-3.png', 'images/artista-agustin-gordillo-4.jpeg', 'images/artista-agustin-gordillo-5.jpeg'],
   },
   {
     negocio: 'Wincafe Vending',
