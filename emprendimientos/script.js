@@ -1217,6 +1217,17 @@ const CONSOLIDATED_ENTRIES = [
     webs: ['https://www.remax.com.ar/agent/diego-vilardo'],
     fotos: ['images/consultor-inmobiliario-diego-vilardo.jpg'],
   },
+  {
+    negocio: 'Venta de yerba',
+    nombre: 'Sabrina Rosenzvaig',
+    sala: 'Magenta',
+    rubro: '🍽️ Gastronomía y viajes',
+    descripcion: 'Vendo yerba agroecológica que proviene de un productor chiquito de Misiones, llamada Yerba Canchada Barbacuá. Es una yerba para personas con acidez o sensibilidad a los alimentos, muy suave, que se puede tomar todo el día sin problema.',
+    whatsapp: '5491159434083',
+    instagram: null,
+    webs: [],
+    fotos: ['images/venta-de-yerba-sabrina-rosenzvaig-1.jpg', 'images/venta-de-yerba-sabrina-rosenzvaig-2.jpg', 'images/venta-de-yerba-sabrina-rosenzvaig-3.jpg'],
+  },
 ];
 
 // ---------- RENDER ----------
