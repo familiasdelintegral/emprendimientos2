@@ -1206,6 +1206,17 @@ const CONSOLIDATED_ENTRIES = [
     webs: [],
     fotos: ['images/wincafe-vending-esteban-jaeggi-1.png', 'images/wincafe-vending-esteban-jaeggi-2.png'],
   },
+  {
+    negocio: 'Consultor inmobiliario',
+    nombre: 'Diego Vilardo',
+    sala: 'Sala 3 B, Amarillo',
+    rubro: '💼 Profesionales',
+    descripcion: 'Soy agente inmobiliario, puedo ayudarte en la venta de tu propiedad y en la búsqueda de un nuevo hogar.',
+    whatsapp: '5491155969172',
+    instagram: 'diegovilardo.remaxnet',
+    webs: ['https://www.remax.com.ar/agent/diego-vilardo'],
+    fotos: ['images/consultor-inmobiliario-diego-vilardo.jpg'],
+  },
 ];
 
 // ---------- RENDER ----------
