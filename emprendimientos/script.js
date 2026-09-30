@@ -1228,6 +1228,28 @@ const CONSOLIDATED_ENTRIES = [
     webs: [],
     fotos: ['images/venta-de-yerba-sabrina-rosenzvaig-1.jpg', 'images/venta-de-yerba-sabrina-rosenzvaig-2.jpg', 'images/venta-de-yerba-sabrina-rosenzvaig-3.jpg'],
   },
+  {
+    negocio: 'CASA CUERPA - Un espacio de prácticas de movimiento y bioenergética',
+    nombre: 'Laura Peña Núñez',
+    sala: 'Violeta',
+    rubro: '🩺 Salud y bienestar',
+    descripcion: 'Soy Lau, bailarina, coreógrafa y docente. Durante 10 años trabajé en Londres junto a compañías de danza de gran trayectoria, participando en procesos creativos y educativos y realizando giras nacionales e internacionales. Desde 2016 vivo nuevamente en Buenos Aires, donde continúo desarrollando mi trabajo artístico y docente en distintos proyectos independientes. CASA CUERPA es un espacio de prácticas de movimiento y Bioenergética en Villa Luro, con propuestas de Entrenamiento, Danza y Bioenergética.',
+    whatsapp: '5491160210491',
+    instagram: 'casa.cuerpa',
+    webs: ['https://www.instagram.com/la_penanunez/'],
+    fotos: ['images/casa-cuerpa-laura-pena-nunez.jpg'],
+  },
+  {
+    negocio: 'Traductora Pública',
+    nombre: 'Natalia Molina',
+    sala: 'Bordó',
+    rubro: '💼 Profesionales',
+    descripcion: 'Soy Traductora Pública de Inglés. Pueden ver nuestros servicios en www.pentag.com.ar.',
+    whatsapp: '5491157418984',
+    instagram: 'pentagroupls',
+    webs: ['https://www.pentag.com.ar'],
+    fotos: ['images/traductora-publica-natalia-molina.jpg'],
+  },
 ];
 
 // ---------- RENDER ----------
