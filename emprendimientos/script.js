@@ -1017,7 +1017,7 @@ const CONSOLIDATED_ENTRIES = [
     whatsapp: '5491168651125',
     instagram: null,
     webs: [],
-    fotos: ['images/optica-velez-sarsfield-natalia-farynyk.png'],
+    fotos: ['images/optica-velez-sarsfield-natalia-farynyk-2.jpg', 'images/optica-velez-sarsfield-natalia-farynyk.png'],
   },
   {
     negocio: 'Asesora integral financiera y en planificación familiar',
@@ -1260,6 +1260,28 @@ const CONSOLIDATED_ENTRIES = [
     instagram: 'melinasaredo',
     webs: ['https://melinasaredoarte.mitiendanube.com'],
     fotos: ['images/melina-saredo-arte.jpg'],
+  },
+  {
+    negocio: 'Cuelgan Joyería',
+    nombre: '',
+    sala: '',
+    rubro: '🎨 Arte y creatividad',
+    descripcion: 'Joyería cerámica en gres. Aros y dijes moldeados y esmaltados a mano.',
+    whatsapp: null,
+    instagram: 'cuelganjoyeria',
+    webs: [],
+    fotos: ['images/cuelgan-joyeria.jpg'],
+  },
+  {
+    negocio: 'Licor de crema de pistacho',
+    nombre: 'Agustín Castellano',
+    sala: 'Verde',
+    rubro: '🍽️ Gastronomía y viajes',
+    descripcion: 'Licor de crema de pistacho.',
+    whatsapp: '5491130595770',
+    instagram: null,
+    webs: [],
+    fotos: ['images/licor-de-crema-de-pistacho-agustin-castellano.jpeg'],
   },
 ];
 
