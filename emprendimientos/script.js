@@ -1250,6 +1250,17 @@ const CONSOLIDATED_ENTRIES = [
     webs: ['https://www.pentag.com.ar'],
     fotos: ['images/traductora-publica-natalia-molina.jpg'],
   },
+  {
+    negocio: 'Melina Saredo Arte',
+    nombre: 'Melina Saredo',
+    sala: 'Magenta, Celeste',
+    rubro: '🎨 Arte y creatividad',
+    descripcion: 'Soy Melina Saredo, artista visual. Creo y vendo pinturas, dibujos y esculturas originales. También hago retratos personalizados en estilo pop o floral y tazas con mis propios diseños artísticos. Son propuestas para regalar en cumpleaños, fechas especiales o eventos empresariales. Podés comprar en mi tienda online o escribirme para encargar una obra personalizada.',
+    whatsapp: '5491161030645',
+    instagram: 'melinasaredo',
+    webs: ['https://melinasaredoarte.mitiendanube.com'],
+    fotos: ['images/melina-saredo-arte.jpg'],
+  },
 ];
 
 // ---------- RENDER ----------
