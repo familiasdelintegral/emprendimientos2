@@ -1270,7 +1270,7 @@ const CONSOLIDATED_ENTRIES = [
     whatsapp: null,
     instagram: 'cuelganjoyeria',
     webs: [],
-    fotos: ['images/cuelgan-joyeria.jpg'],
+    fotos: ['images/cuelgan-joyeria.jpg', 'images/cuelgan-joyeria-2.png', 'images/cuelgan-joyeria-3.png'],
   },
   {
     negocio: 'Licor de crema de pistacho',
